@@ -20,6 +20,17 @@
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/fullcalendar/lib/main.min.css"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let calendarEl = document.getElementById("calendar");
+            let calendar = FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth'
+            })
+            calendar.render();
+        })
+    </script>
+
 </body>
 
 </html>
